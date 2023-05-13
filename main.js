@@ -32,12 +32,9 @@ function handleGuess() {
   if (checkGuess(guess)) {
     alert(
       `Yay! You guessed the number in ${numberOfGuesses} tries. The number is ${randomNumber}`
-      // TODO: The game continues and the values of randomNumber and numberOfGuesses are not reset
-      // Ask the students how we can refactor the code to improve the game
     );
   } else {
     alert(`Hmmm. Let's try again!`);
-    // recursion
     handleGuess();
   }
 }
@@ -73,5 +70,3 @@ function showMessage() {
 }
 
 showMessage();
-
-// In the first example, ++i increments i to 4 and assigns the value of 4 to x. In the second example, j++ assigns the value of 3 to y and then increments j to 4.
